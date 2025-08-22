@@ -1,2 +1,36 @@
 # qasim-hussain-portfolio
-Coding, reading, and solving problems. Let's connect and build something cool together.
+Coding, reading, and solving problems. Let's connect and build something cool together.# My Professional Portfolio
+
+---
+
+## About This Portfolio
+This repository contains the source code for my personal portfolio website. This project showcases my skills, projects, and professional journey as a developer. The goal is to provide a clean and professional space to demonstrate my work and make it easy for potential employers or collaborators to connect with me.
+
+---
+
+## Features
+* **Modern Design:** The website has a sleek, modern, and professional look.
+* **Responsive Layout:** The design adapts seamlessly to all devices, from desktop screens to mobile phones.
+* **Project Showcase:** A dedicated section to display my completed projects with descriptions and links.
+* **Contact Section:** An easy way for others to get in touch with me.
+
+---
+
+## Technologies Used
+* **HTML:** For the basic structure of the website.
+* **CSS:** For styling and design.
+* **JavaScript:**  For interactive features and dynamic content.
+
+---
+
+## How to View
+To view this portfolio, you can simply open the `index.html` file in your web browser.
+
+---
+
+## Let's Connect!
+I'm always open to new opportunities and collaborations. Feel free to connect with me on my social profiles.
+
+* **X (Twitter):** [My X Profile](https://x.com/QasimRaja50964)
+* - **GitHub:** [My GitHub Profile](https://github.com/qasimsaleem793-commits)
+
