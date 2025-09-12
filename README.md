@@ -33,4 +33,4 @@ I'm always open to new opportunities and collaborations. Feel free to connect wi
 
 * **X (Twitter):** [My X Profile](https://x.com/QasimRaja50964)
 * - **GitHub:** [My GitHub Profile](https://github.com/qasimsaleem793-commits)
-
+* - **YouTube:** [My YouTube Profile](https://www.youtube.com/channel/UC63ow71QeGQOQLdAqdLPaHA)
