@@ -31,6 +31,6 @@ To view this portfolio, you can simply open the `index.html` file in your web br
 ## Let's Connect!
 I'm always open to new opportunities and collaborations. Feel free to connect with me on my social profiles.
 
-* **X (Twitter):** [My X Profile](https://x.com/QasimRaja50964)
+* - **X (Twitter):** [My X Profile](https://x.com/QasimRaja50964)
 * - **GitHub:** [My GitHub Profile](https://github.com/qasimsaleem793-commits)
 * - **YouTube:** [My YouTube Profile](https://www.youtube.com/channel/UC63ow71QeGQOQLdAqdLPaHA)
