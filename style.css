@@ -355,4 +355,38 @@ section {
     .about-text {
         font-size: 1rem;
     }
+
+}
+
+/* ---- Responsive Design Styles ---- */
+
+/* Tablet Screens (601px se 768px tak) */
+@media (min-width: 601px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .main-heading {
+        font-size: 2.5rem;
+    }
+    .portfolio-item {
+        width: 48%; /* Items ko do columns mein rakhega */
+    }
+}
+
+/* Mobile Screens (600px aur us se kam) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .main-heading {
+        font-size: 2rem;
+        padding: 10px;
+    }
+    .portfolio-item {
+        width: 90%; /* Items ko aik column mein rakhega */
+        margin: 10px auto;
+    }
+    .contact-info {
+        flex-direction: column; /* Contact icons ko upar neeche kar dega */
+    }
 }
