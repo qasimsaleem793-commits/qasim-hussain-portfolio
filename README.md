@@ -17,7 +17,7 @@ This repository contains the source code for my personal portfolio website. This
 ---
 
 ## Live Preview
-![Portfolio Screenshot]()
+![Portfolio Screenshot](https://github.com/qasimsaleem793-commits/qasim-hussain-portfolio/blob/main/Screenshot%202025-09-15%20114921.png?raw=true)
 
 
 ---
