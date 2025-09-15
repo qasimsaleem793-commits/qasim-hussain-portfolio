@@ -17,7 +17,7 @@ This repository contains the source code for my personal portfolio website. This
 ---
 
 ## Live Preview
-![Portfolio Screenshot](https://github.com/qasimsaleem793-commits/qasim-hussain-portfolio/blob/main/assist/kashii%20g.png?raw=true)
+![Portfolio Screenshot]()
 
 
 ---
