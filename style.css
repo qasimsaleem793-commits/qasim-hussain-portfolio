@@ -1,7 +1,4 @@
- /* --- Basic Setup & Variables ---  */
-body{
-    background-color: #000000;
-}
+/* --- Basic Setup & Variables --- */
 :root {
     --red-glow: #ff004f;
     --dark-bg: #000000;
@@ -220,7 +217,7 @@ section {
 }
 .skill-level {
     height: 100%;
-    width: 0; /* JS se animate hoga */
+    width: 0;
     background-color: var(--red-glow);
     border-radius: 5px;
     box-shadow: 0 0 10px var(--red-glow);
@@ -229,7 +226,6 @@ section {
 .skill-card.is-visible .skill-level {
     width: var(--level);
 }
-
 
 /* Projects Section */
 .projects-grid {
@@ -278,9 +274,28 @@ section {
     color: var(--dark-bg);
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
+}
+.btn-project + .btn-project {
+    margin-left: 10px;
 }
 
-/* Contact Form */
+/* Contact Section */
+.contact-info {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.contact-info a {
+    color: var(--red-glow);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.contact-info a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -304,71 +319,40 @@ section {
 }
 
 /* Scroll Reveal Animation */
-/* .scroll-reveal {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-.scroll-reveal.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-} */
-
 .scroll-animate {
     opacity: 0;
     transition: opacity 0.8s ease-out, transform 1s ease-out;
 }
-
-/* Left se slide-in karne ke liye */
 .slide-in-from-left {
     transform: translateX(-100px);
 }
-
-/* Right se slide-in karne ke liye */
 .slide-in-from-right {
     transform: translateX(100px);
 }
-
-/* Neeche se slide-in karne ke liye (baaki sections ke liye) */
 .slide-in-from-bottom {
     transform: translateY(50px);
 }
-
-/* Jab element screen par nazar aaye, to usay apni asal position par le aayein */
 .scroll-animate.is-visible {
     opacity: 1;
     transform: translateX(0) translateY(0);
 }
 
-/* --- Keyframe Animations --- */
-@keyframes glitch-anim-1 {
-    0% { clip: rect(13px, 9999px, 9px, 0); }
-    20% { clip: rect(18px, 9999px, 99px, 0); }
-    40% { clip: rect(50px, 9999px, 102px, 0); }
-    60% { clip: rect(80px, 9999px, 10px, 0); }
-    80% { clip: rect(20px, 9999px, 5px, 0); }
-    100% { clip: rect(45px, 9999px, 98px, 0); }
-}
-
-@keyframes glitch-anim-2 {
-    0% { clip: rect(2px, 9999px, 79px, 0); }
-    20% { clip: rect(20px, 9999px, 19px, 0); }
-    40% { clip: rect(5px, 9999px, 4px, 0); }
-    60% { clip: rect(60px, 9999px, 90px, 0); }
-    80% { clip: rect(92px, 9999px, 48px, 0); }
-    100% { clip: rect(2px, 9999px, 79px, 0); }
-}
-
-@keyframes glitch-anim-main {
-    0% { transform: skewX(0deg); }
-    5% { transform: skewX(2deg); }
-    10% { transform: skewX(0deg); }
-    50% { transform: skewX(0deg); }
-    52% { transform: skewX(-3deg); }
-    54% { transform: skewX(0deg); }
-    100% { transform: skewX(0deg); }
-}
-
-@keyframes blink {
-    50% { opacity: 0; }
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text {
+        font-size: 1rem;
+    }
 }

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             },
             "color": {
-                "value": "#ff004f" // Red glow color
+                "value": "#ff004f"
             },
             "shape": {
                 "type": "circle",
@@ -69,14 +69,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 2. Typed.js Text Animation
     new Typed('#typed-text', {
-        strings: ['Frontend Developer', 'Typist', 'Creative Coder', 'Building Digital Worlds'],
+        strings: ['Front-end Developer', 'Virtual Assistant', 'Creative Coder', 'Building Digital Experiences'],
         typeSpeed: 50,
         backSpeed: 30,
         loop: true,
         backDelay: 2000,
     });
     
-    // 3. Scroll Reveal Animations
+    // 3. Scroll Reveal Animations (Using a single IntersectionObserver)
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -84,30 +84,24 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, {
-        threshold: 0.1 // 10% hissa nazar anay par animation trigger ho
+        threshold: 0.1
     });
 
-    // Observe all elements with the class 'scroll-reveal'
-    // const revealElements = document.querySelectorAll('.scroll-reveal');
-    // revealElements.forEach(el => observer.observe(el));
+    const revealElements = document.querySelectorAll('.scroll-animate');
+    revealElements.forEach(el => observer.observe(el));
 
-const revealElements = document.querySelectorAll('.scroll-animate');
-revealElements.forEach(el => observer.observe(el));
-
-
-    // Special observer for skill bars to trigger animation only once
+    // Fix for skills section
     const skillObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
-                skillObserver.unobserve(entry.target); // Animation ke baad observe karna band kar dein
+                skillObserver.unobserve(entry.target);
             }
         });
     }, {
-        threshold: 0.5 // 50% hissa nazar anay par
+        threshold: 0.5
     });
-    
+
     const skillCards = document.querySelectorAll('.skill-card');
     skillCards.forEach(el => skillObserver.observe(el));
-
 });
