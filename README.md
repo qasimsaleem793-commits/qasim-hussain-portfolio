@@ -24,7 +24,8 @@ This repository contains the source code for my personal portfolio website. This
 ---
 
 ## How to View
-To view this portfolio, you can simply open the `index.html` file in your web browser.
+You can view the live version of this portfolio here:
+[Your Live Website URL]
 
 ---
 
@@ -34,3 +35,4 @@ I'm always open to new opportunities and collaborations. Feel free to connect wi
 * - **X (Twitter):** [My X Profile](https://x.com/QasimRaja50964)
 * - **GitHub:** [My GitHub Profile](https://github.com/qasimsaleem793-commits)
 * - **YouTube:** [My YouTube Profile](https://www.youtube.com/channel/UC63ow71QeGQOQLdAqdLPaHA)
+* - **Email:** [Lets connect](qasimsaleem793@gmail.com)
