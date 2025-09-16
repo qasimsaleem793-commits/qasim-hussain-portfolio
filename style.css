@@ -340,37 +340,56 @@ section {
 /* --- Media Queries for Responsiveness --- */
 @media (max-width: 768px) {
     .section-title {
+        font-size: 2rem;
+    }
+    .glitch {
         font-size: 2.5rem;
     }
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-    .hero h2 {
+    .subtitle {
         font-size: 1.2rem;
     }
+    .btn {
+        padding: 10px 20px;
+        margin: 15px 5px 0;
+    }
+
+    /* About Section */
     .about-content {
         flex-direction: column;
         text-align: center;
+        gap: 30px;
     }
     .about-text {
         font-size: 1rem;
     }
+    .about-image img {
+        width: 80%; /* Image ka size chota karne ke liye */
+        margin: 0 auto;
+    }
 
-}
-
-/* Skills Grid Layout (Mobile Screens) */
-.skills-grid {
-    display: grid;
-    /* Mobile par 2 skills aik line mein dikhaega */
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 10px;
-}
-
-/* Skills Grid Layout (Tablet aur Badi Screens) */
-@media (min-width: 768px) {
+    /* Skills Section */
     .skills-grid {
-        /* Tablet aur badi screens par 3 skills aik line mein dikhaega */
-        grid-template-columns: repeat(3, 1fr);
+        /* Mobile par ek line mein 2 skills */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .skill-card h3 {
+        font-size: 1rem;
+    }
+
+    /* Projects Section */
+    .projects-grid {
+        /* Mobile par ek line mein 2 projects */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        /* Ab teesre project ko center karne ke liye */
+        justify-content: center;
+    }
+
+    /* Teesre project ko center mein karne ke liye */
+    .project-card:nth-child(3) {
+        grid-column: span 2; /* Teesra item do columns ki space lega */
+        margin: 0 auto;
+        max-width: 350px;
     }
 }
