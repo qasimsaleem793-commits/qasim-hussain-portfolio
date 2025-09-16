@@ -339,6 +339,7 @@ section {
 
 /* --- Media Queries for Responsiveness --- */
 @media (max-width: 768px) {
+    /* General Mobile Adjustments */
     .section-title {
         font-size: 2rem;
     }
@@ -359,17 +360,18 @@ section {
         text-align: center;
         gap: 30px;
     }
+    .about-image img {
+        width: 80%;
+        margin: 0 auto;
+    }
     .about-text {
         font-size: 1rem;
-    }
-    .about-image img {
-        width: 80%; /* Image ka size chota karne ke liye */
-        margin: 0 auto;
     }
 
     /* Skills Section */
     .skills-grid {
-        /* Mobile par ek line mein 2 skills */
+        display: grid;
+        /* Ek line mein 2 skills */
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
@@ -379,17 +381,26 @@ section {
 
     /* Projects Section */
     .projects-grid {
-        /* Mobile par ek line mein 2 projects */
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        /* Ab teesre project ko center karne ke liye */
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
+    }
+    
+    /* Ab saare projects ka size barabar hai */
+    .project-card {
+        width: calc(50% - 10px); /* 2 projects ek line mein, barabar size ke */
     }
 
     /* Teesre project ko center mein karne ke liye */
     .project-card:nth-child(3) {
-        grid-column: span 2; /* Teesra item do columns ki space lega */
-        margin: 0 auto;
-        max-width: 350px;
+        margin: 0 auto; /* Upar-neeche 0, left-right auto se center ho jayega */
+    }
+    
+    /* Projects ke buttons ka size kam karne ke liye */
+    .project-info .btn-project {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+        margin-top: 5px;
     }
 }
